@@ -1,0 +1,84 @@
+//
+// Created by Aidan on 11/22/2020.
+//
+
+#ifndef ECHO_BOT_INTENTS_HH
+#define ECHO_BOT_INTENTS_HH
+
+namespace discordpp{
+namespace intents{
+const uint16_t NONE = 0;
+
+const uint16_t GUILDS = 1u << 0u;
+    // GUILD_CREATE
+    // GUILD_UPDATE
+    // GUILD_DELETE
+    // GUILD_ROLE_CREATE
+    // GUILD_ROLE_UPDATE
+    // GUILD_ROLE_DELETE
+    // CHANNEL_CREATE
+    // CHANNEL_UPDATE
+    // CHANNEL_DELETE
+    // CHANNEL_PINS_UPDATE
+
+const uint16_t GUILD_MEMBERS = 1u << 1u;
+    // GUILD_MEMBER_ADD
+    // GUILD_MEMBER_UPDATE
+    // GUILD_MEMBER_REMOVE
+
+const uint16_t GUILD_BANS = 1u << 2u;
+    // GUILD_BAN_ADD
+    // GUILD_BAN_REMOVE
+
+const uint16_t GUILD_EMOJIS = 1u << 3u;
+    // GUILD_EMOJIS_UPDATE
+
+const uint16_t GUILD_INTEGRATIONS = 1u << 4u;
+    // GUILD_INTEGRATIONS_UPDATE
+
+const uint16_t GUILD_WEBHOOKS = 1u << 5u;
+    // WEBHOOKS_UPDATE
+
+const uint16_t GUILD_INVITES = 1u << 6u;
+    // INVITE_CREATE
+    // INVITE_DELETE
+
+const uint16_t GUILD_VOICE_STATES = 1u << 7u;
+    // VOICE_STATE_UPDATE
+
+const uint16_t GUILD_PRESENCES = 1u << 8u;
+    // PRESENCE_UPDATE
+
+const uint16_t GUILD_MESSAGES = 1u << 9u;
+    // MESSAGE_CREATE
+    // MESSAGE_UPDATE
+    // MESSAGE_DELETE
+    // MESSAGE_DELETE_BULK
+
+const uint16_t GUILD_MESSAGE_REACTIONS = 1u << 10u;
+    // MESSAGE_REACTION_ADD
+    // MESSAGE_REACTION_REMOVE
+    // MESSAGE_REACTION_REMOVE_ALL
+    // MESSAGE_REACTION_REMOVE_EMOJI
+
+const uint16_t GUILD_MESSAGE_TYPING = 1u << 11u;
+    // TYPING_START
+
+const uint16_t DIRECT_MESSAGES = 1u << 12u;
+    // MESSAGE_CREATE
+    // MESSAGE_UPDATE
+    // MESSAGE_DELETE
+    // CHANNEL_PINS_UPDATE
+
+const uint16_t DIRECT_MESSAGE_REACTIONS = 1u << 13u;
+    // MESSAGE_REACTION_ADD
+    // MESSAGE_REACTION_REMOVE
+    // MESSAGE_REACTION_REMOVE_ALL
+    // MESSAGE_REACTION_REMOVE_EMOJI
+
+const uint16_t DIRECT_MESSAGE_TYPING = 1u << 14u;
+    // TYPING_START
+}
+}
+
+#endif // ECHO_BOT_INTENTS_HH
